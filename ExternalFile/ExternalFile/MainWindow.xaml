@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExternalFile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="531.5" Width="796.5">
     <Grid>
-        
+        <Button x:Name="buttonRead" Content="Read" HorizontalAlignment="Left" Margin="180,450,0,0" VerticalAlignment="Top" Width="74" Click="buttonRead_Click"/>
+        <RichTextBox x:Name="richTextBoxSourceRead" HorizontalAlignment="Left" Height="405" Margin="48,26,0,0" VerticalAlignment="Top" Width="326">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="buttonWrite" Content="Write" HorizontalAlignment="Left" Margin="544,450,0,0" VerticalAlignment="Top" Width="75" Click="buttonWrite_Click"/>
+        <RichTextBox x:Name="richTextBoxSourceWrite" HorizontalAlignment="Left" Height="405" Margin="414,26,0,0" VerticalAlignment="Top" Width="326">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
     </Grid>
 </Window>
